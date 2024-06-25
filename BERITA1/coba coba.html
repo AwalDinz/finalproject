@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container dengan Isi di Kiri dan Kanan</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between; /* Mengatur item di dalam container agar berada di sisi kiri dan kanan */
+            padding: 20px; /* Padding untuk memberikan ruang di sekitar konten */
+            background-color: #f0f0f0;
+        }
+
+        .left-content, .right-content {
+            flex: 1; /* Memiliki ruang yang sama untuk kedua bagian */
+        }
+
+        .left-content {
+            /* Gaya CSS untuk bagian kiri */
+            background-color: #cce5ff;
+            padding: 10px;
+        }
+
+        .right-content {
+            /* Gaya CSS untuk bagian kanan */
+            background-color: #e6ffe6;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="left-content">
+        <!-- Isi untuk bagian kiri -->
+        <h2>Bagian Kiri</h2>
+        <p>Ini adalah konten di bagian kiri container.</p>
+    </div>
+    <div>
+        <h1>susu saya susu bender</h1>
+    </div>
+    <div class="right-content">
+        <!-- Isi untuk bagian kanan -->
+        <h2>Bagian Kanan</h2>
+        <p>Ini adalah konten di bagian kanan container.</p>
+    </div>
+</div>
+
+</body>
+</html>
